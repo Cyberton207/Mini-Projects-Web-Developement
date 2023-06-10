@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  .outer {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #ff416c, #ff4b2b);
+  }
+  .inner {
+    width: 400px;
+    margin: 0 auto;
+    /* As we make position relative due to its by giving 50% it came into the middle */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 50px;
+    background-color: white;
+    /* wheat color is adjustable in these form with the background color */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 2px 2px 5px #ff416c;
+  }
+  .header_sign_up h1 {
+    font-size: 2.5rem;
+    color: #212121;
+  }
+  .header_sign_up p {
+    font-size: 0.8rem;
+    color: #757575;
+  }
+  .signup_main {
+    margin: 20px 0;
+  }
+  .signup_main p {
+    margin: 10px 0;
+  }
+  .signup_main p label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .signup_main input {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: 2px solid #bdbdbd;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+  }
+  /* Below is the code for the when you focus on the input buttons */
+  .signup_main input:focus {
+    border: 1.5px solid #ff416c;
+  }
+  .signup_main input[type="submit"] {
+    background-color: #ff416c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .signup_main input[type="submit"]:hover {
+    background-color: #ff4b2b;
+  }
+  .signup_footer p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #757575;
+  }
+  .signup_footer p a {
+    color: #ff416c;
+    text-decoration: none;
+  }
+  .signup_footer p a:hover {
+    text-decoration: underline;
+  }
